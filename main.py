@@ -4,8 +4,8 @@ from sqlalchemy.orm import sessionmaker
 from models import BASE, Publisher, Shop, Book, Stock, Sale
 import json
 
-LOGIN = dotenv_values("venv/.env")["LOGIN"]
-PASSWORD = dotenv_values("venv/.env")["PASSWORD"]
+LOGIN = dotenv_values(".env")["LOGIN"]
+PASSWORD = dotenv_values(".env")["PASSWORD"]
 DSN = f"postgresql://{LOGIN}:{PASSWORD}@localhost:5432/alchemy"
 
 
