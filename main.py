@@ -6,7 +6,8 @@ import json
 
 LOGIN = dotenv_values(".env")["LOGIN"]
 PASSWORD = dotenv_values(".env")["PASSWORD"]
-DSN = f"postgresql://{LOGIN}:{PASSWORD}@localhost:5432/alchemy"
+DB = "alchemy"
+DSN = f"postgresql://{LOGIN}:{PASSWORD}@localhost:5432/{DB}"
 
 
 def create_tables(eng):
